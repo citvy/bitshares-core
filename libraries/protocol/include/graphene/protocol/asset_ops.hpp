@@ -484,12 +484,12 @@ namespace graphene { namespace protocol {
    };
 
    /**
-    * @brief Transfers BTS from the fee pool of a specified asset back to the issuer's balance
+    * @brief Transfers CIV from the fee pool of a specified asset back to the issuer's balance
 
     * @param fee Payment for the operation execution
-    * @param issuer Account which will be used for transfering BTS
+    * @param issuer Account which will be used for transfering CIV
     * @param asset_id Id of the asset whose fee pool is going to be drained
-    * @param amount_to_claim Amount of BTS to claim from the fee pool
+    * @param amount_to_claim Amount of CIV to claim from the fee pool
     * @param extensions Field for future expansion
 
     * @pre @ref fee must be paid in the asset other than the one whose pool is being drained
