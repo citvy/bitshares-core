@@ -114,7 +114,7 @@ endif()
 add_definitions (-fPIC)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS "ON")
-set( GRAPHENE_EGENESIS_JSON "${CMAKE_CURRENT_SOURCE_DIR}/libraries/egenesis/genesis.json"
+set( GRAPHENE_EGENESIS_JSON "${CMAKE_CURRENT_SOURCE_DIR}/libraries/egenesis/genesis-dev.json"
      CACHE STRING "Path to embedded genesis file" )
 
 if (USE_PCH)

@@ -1,7 +1,7 @@
 #pragma once
 
 /////////
-/// @brief forward declaration, using as a hack to generate a genesis.json file
+/// @brief forward declaration, using as a hack to generate a genesis-dev.json file
 /// for testing
 /////////
 namespace graphene { namespace app { namespace detail {
@@ -10,11 +10,11 @@ namespace graphene { namespace app { namespace detail {
 
 /////////
 /// @brief create a genesis_json file
-/// @param directory the directory to place the file "genesis.json"
+/// @param directory the directory to place the file "genesis-dev.json"
 /// @returns the full path to the file
 ////////
 boost::filesystem::path create_genesis_file(fc::temp_directory& directory) {
-   boost::filesystem::path genesis_path = boost::filesystem::path{directory.path().generic_string()} / "genesis.json";
+   boost::filesystem::path genesis_path = boost::filesystem::path{directory.path().generic_string()} / "genesis-dev.json";
    fc::path genesis_out = genesis_path;
    graphene::chain::genesis_state_type genesis_state = graphene::app::detail::create_example_genesis();
 
